@@ -28,9 +28,9 @@ if __name__ == '__main__':
     string_msg.data = "e_start"
    
 
-    joint_names = ["arm_joint_1"]
+    joint_names = ["arm_joint_1" , "arm_joint_5"]
 
-    joint_value_=[3.0]
+    joint_value_=[0.2, 0.2]
 
     
     for i in range (0,len(joint_names)):
@@ -45,13 +45,11 @@ if __name__ == '__main__':
         joint_position_msg.positions.append(joint_value_msg)
     loop_rate = rospy.Rate(10)
         
-    #while not rospy.is_shutdown():
-    joint_position_pub.publish(joint_position_msg)
-    rospy.sleep(0.5)
-    #loop_rate.sleep()
-    joint_position_string_pub.publish(string_msg)
-    #loop_rate.sleep()
-    rospy.sleep(0.5)
+    while not rospy.is_shutdown():
+        joint_position_pub.publish(joint_position_msg)
+        rospy.sleep(0.5)
+        joint_position_string_pub.publish(string_msg)
+        loop_rate.sleep()
 
     
     
