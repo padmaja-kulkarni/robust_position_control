@@ -17,7 +17,7 @@ if __name__ == '__main__':
     rospy.init_node('robust_position_control_test_unit', anonymous=False)
     rospy.loginfo("robust_position_control_test_unit is now running")
 
-    joint_position_pub = rospy.Publisher("/robust_position_control/component_input", JointPositions, queue_size=100)
+    joint_position_pub = rospy.Publisher("/robust_position_controller/component_input", JointPositions, queue_size=100)
 
     joint_position_msg = JointPositions()
    
