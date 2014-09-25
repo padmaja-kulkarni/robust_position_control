@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <name>robust_position_control_test_unit</name>
+  <version>0.0.0</version>
+  <description>The robust_position_control_test_unit package</description>
+  <maintainer email="padmaja2065@gmail.com">padmaja</maintainer>
+
+  <license>GPLv3</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>brics_actuator</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>brics_actuator</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+</package>
