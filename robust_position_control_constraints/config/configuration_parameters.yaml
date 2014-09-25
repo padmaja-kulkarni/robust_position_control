@@ -1,0 +1,14 @@
+arm_joint_1_angle_max_limit : 2.0
+arm_joint_1_angle_min_limit : -2.0
+arm_joint_2_angle_max_limit : 2.0
+arm_joint_2_angle_min_limit : -2.0
+arm_joint_3_angle_max_limit : 2.0
+arm_joint_3_angle_min_limit : -2.0
+arm_joint_4_angle_max_limit : 2.0
+arm_joint_4_angle_min_limit : -2.0
+arm_joint_5_angle_max_limit : 2.0
+arm_joint_5_angle_min_limit : -2.0
+velocity_limit : 2.0
+threshold_limit : -2.0
+vp_default_mode: 'rect'
+acceleration_limit : 0.0

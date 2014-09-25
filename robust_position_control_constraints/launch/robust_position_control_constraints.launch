@@ -1,0 +1,9 @@
+<launch>
+	
+
+	<node pkg="robust_position_control_constraints" name="robust_position_controller" type="robust_position_control_constraints_node" output="screen" required="true" >
+		<rosparam command="load" file="$(find robust_position_control_constraints)/config/configuration_parameters.yaml"/>
+		<param name="joint_name" type="str" value="joint_1"/>
+		<param name="joint_max_acceleration" type="double" value="0.05"/>
+	</node>
+</launch>
