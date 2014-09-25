@@ -17,5 +17,3 @@ catkin_package(
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
-
-add_executable(robust_position_control_test_unit scripts/robust_position_control_test_unit.py)
