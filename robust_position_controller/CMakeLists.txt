@@ -32,7 +32,7 @@ include_directories(
 add_executable(robust_position_controller_node 
  	ros/src/robust_position_controller_node.cpp
  	ros/src/robust_position_controller.cpp
-  common/src/velocity_generator.cpp
+  common/src/velocity_profile_generator.cpp
 )
 
 

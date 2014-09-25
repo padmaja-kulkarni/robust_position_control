@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="robust_position_controller" name="robust_position_controller" type="robust_position_controller_node" output="screen" required="true" >
+		<rosparam command="load" file="$(find robust_position_controller)/config/configuration_parameters.yaml"/>
+
+		<remap from="~component_output" to="/arm_1/arm_controller/velocity_command" />
+	</node>
+</launch>

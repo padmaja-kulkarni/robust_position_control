@@ -8,7 +8,11 @@ int main(int argc, char *argv[])
 	
 	ros::NodeHandle nh("~");
 
-	ros::Rate loop_rate(5);
+	double frequency;
+
+	ros::param::param<double>("~loop_rate", frequency, 5.0);
+
+	ros::Rate loop_rate(frequency);
 
 	ROS_INFO("Node robust_position_controller started");
 
@@ -16,7 +20,6 @@ int main(int argc, char *argv[])
 
 
 	while(ros::ok()) {
-
 		robust_position_control.executeCycle();
 		ros::spinOnce();
 		loop_rate.sleep();
