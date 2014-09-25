@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
     joint_names = ["arm_joint_1" , "arm_joint_5"]
 
-    joint_value_=[0.2, 0.2]
+    joint_value_=[4.0, 4.0]
 
     
     for i in range (0,len(joint_names)):

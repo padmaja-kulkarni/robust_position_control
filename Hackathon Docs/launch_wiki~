@@ -1,0 +1,13 @@
+roscore
+
+roslaunch youbot_driver_ros_interface youbot_driver.launch 
+
+roslaunch robust_position_controller robust_position_controller.launch 
+
+rosrun robust_position_control_test_unit robust_position_control_test_unit.py (change scripts/.....py file command positions)
+
+rqt_plot
+
+add /arm_1/arm_controller/velocity_command/velocities[4]/value
+
+and add /arm_1/arm_controller/velocity_command/velocities[0]/value
